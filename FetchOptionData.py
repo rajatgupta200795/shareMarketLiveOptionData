@@ -73,7 +73,8 @@ def fetchOptionData(url, expiry_date):
 
         row_marker += 1
 
-    current_date_time = datetime.now().strftime("%Y:%m:%dT%H:%M:%S")
+    current_date_time = datetime.now().strftime("%Y:%m:%d_%H:%M:%S")
+    #current_date_time="2019:10:18_15:30:10"
     option_file_name = expiry_date+"_"+current_date_time+".csv"
     #print(option_file_name)
     new_table.to_csv(option_file_name)
