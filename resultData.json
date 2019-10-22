@@ -1,0 +1,35 @@
+{
+    "requestID": "f3fa812c-91f0-484e-82cc-3974863e7b5e",
+    "signature": "number",
+    "results": [
+        0,
+        0,
+        -150,
+        -75,
+        -4350,
+        -75,
+        -23850,
+        -1650,
+        -82650,
+        -318900,
+        -173625,
+        -4725,
+        514050,
+        532500,
+        1012425,
+        393600,
+        739425,
+        506700,
+        507075,
+        151200,
+        505200
+    ],
+    "status": "success",
+    "metrics": {
+        "elapsedTime": "9.812988ms",
+        "executionTime": "9.653976ms",
+        "resultCount": 21,
+        "resultSize": 108,
+        "sortCount": 21
+    }
+}

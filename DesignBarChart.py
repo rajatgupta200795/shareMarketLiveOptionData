@@ -52,7 +52,7 @@ class DesignBarChart:
 
         plt.grid(True, color='grey')
         plt.legend()
-        plt.xticks(np.arange(xmin, xmax + 1, 50))
+        plt.xticks(np.arange(xmin, xmax + 2, 50))
         plt.yticks(np.arange(-yspace, yspace, yspace * 0.1))
 
         for bar in barplot:
@@ -64,27 +64,27 @@ class DesignBarChart:
 
 
 y=[
-  -450,
-  -300,
-  -225,
-  75,
-  -4575,
-  -675,
-  -27300,
-  -2475,
-  -72675,
-  -1575,
-  -165750,
-  -135750,
-  -36000,
-  278100,
-  275025,
-  103275,
-  631275,
-  126675,
-  278925,
-  155850,
-  652650
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  -139125,
+  -123000,
+  45600,
+  347100,
+  561975,
+  118050,
+  646125,
+  165000,
+  286350,
+  173850,
+  637125
 ]
 
 x=[
