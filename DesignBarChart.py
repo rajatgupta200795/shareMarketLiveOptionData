@@ -111,5 +111,3 @@ x=[
   12000
 ]
 
-p=DesignBarChart(x, y, "Strike Price", "Change in OI", "\nChange in Open Interest with Strike Price", "Change in Open Interest")
-p.draw()
