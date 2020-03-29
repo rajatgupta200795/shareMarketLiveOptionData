@@ -2,8 +2,8 @@
 while  true
 do
 
-m=10#$(date +"%M");
-s=10#$(date +"%S");
+m=$(date +"%M");
+s=$(date +"%S");
 
 
 rmin=$(( 3 - $(( m % 3 )) ))
@@ -29,10 +29,9 @@ fi
 
 
 
-python3 /home/rajat.gupta2/Downloads/OptionAnalysis/FetchOptionData.py
-sleep 5
-/home/rajat.gupta2/Downloads/OptionAnalysis/DbInsert.sh 
+#	python3 /home/rajat.gupta2/Downloads/shareMarketTesting/FetchOptionData
+#        /home/rajat.gupta2/Downloads/shareMarketTesting/DbInsert.sh 
 
-sleep $(( $totalSec + 10 ))
+        sleep $(( $totalSec + 10 ))
 
 done
