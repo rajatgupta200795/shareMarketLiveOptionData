@@ -16,7 +16,7 @@ do
   doc_id=$(echo $(echo $x | cut -d "." -f 1) | cut -d "_" -f -3) #remove .csv
   doc_id=$(sed "s/_/$strike_price_text/2" <<< "$doc_id")
   #echo $doc_id
-  sudo /opt/couchbase/bin/cbq --script="INSERT INTO test (KEY, VALUE) VALUES ('$doc_id', $data)" --engine=http://localhost:8091 -u Administrator -p rajat123
+  sudo /opt/couchbase/bin/cbq --script="INSERT INTO market (KEY, VALUE) VALUES ('$doc_id', $data)" --engine=http://localhost:8091 -u Administrator -p rajat123
 done < "$option_file_name"
 }
 
