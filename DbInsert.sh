@@ -11,7 +11,7 @@ do
     continue
   fi
 
-  data="{\"created\" : $created, \"ce_oi\" : \"$f2\", \"ce_chng_in_oi\" : \"$f3\", \"ce_volume\" : \"$f4\", \"ce_iv\" : \"$f5\", \"ce_ltp\" : \"$f6\", \"ce_net_chng\" : \"$f7\", \"ce_bidqty\" : \"$f8\", \"ce_bidprice\" : \"$f9\", \"ce_askprice\" : \"$f10\", \"ce_askqty\" : \"$f11\", \"strike_price\" : \"${f12%.*}\", \"pe_bidqty\" : \"$f13\", \"pe_bidprice\" : \"$f14\", \"pe_askprice\" : \"$f15\", \"pe_askqty\" : \"$f16\", \"pe_net_chng\" : \"$f17\", \"pe_ltp\" : \"$f18\", \"pe_iv\" : \"$f19\", \"pe_volume\" : \"$f20\", \"pe_chng_in_oi\" : \"$f21\", \"pe_oi\" : \"$f22\", \"spot_price\" : \"$nifty_index\"}"  #data=$(echo $data | jq '.')
+  data="{\"created\" : $created, \"ce_oi\" : \"$f2\", \"ce_chng_in_oi\" : \"$f3\", \"ce_volume\" : \"$f4\", \"ce_iv\" : \"$f5\", \"ce_ltp\" : \"$f6\", \"ce_net_chng\" : \"$f7\", \"strike_price\" : \"${f12%.*}\", \"pe_net_chng\" : \"$f17\", \"pe_ltp\" : \"$f18\", \"pe_iv\" : \"$f19\", \"pe_volume\" : \"$f20\", \"pe_chng_in_oi\" : \"$f21\", \"pe_oi\" : \"$f22\", \"spot_price\" : \"$nifty_index\"}"  #data=$(echo $data | jq '.')
   strike_price_text=":${f12%.*}:"
   doc_id=$(echo $(echo $x | cut -d "." -f 1) | cut -d "_" -f -3) #remove .csv
   doc_id=$(sed "s/_/$strike_price_text/2" <<< "$doc_id")
